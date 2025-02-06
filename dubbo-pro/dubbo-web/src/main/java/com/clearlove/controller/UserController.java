@@ -1,5 +1,6 @@
 package com.clearlove.controller;
 
+import com.clearlove.pojo.User;
 import com.clearlove.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.apache.dubbo.config.annotation.Reference;
@@ -26,5 +27,11 @@ public class UserController {
   @RequestMapping("/sayHello")
   public String sayHello(){
     return userService.sayHello();
+  }
+
+
+  @RequestMapping("/find")
+  public User find(int id){
+    return userService.findUserById(id);
   }
 }

@@ -13,6 +13,7 @@
     <module>dubbo-service</module>
     <module>dubbo-web</module>
     <module>dubbo-interface</module>
+    <module>dubbo-pojo</module>
   </modules>
 
   <properties>

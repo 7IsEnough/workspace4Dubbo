@@ -1,5 +1,6 @@
 package com.clearlove.service.impl;
 
+import com.clearlove.pojo.User;
 import com.clearlove.service.UserService;
 import org.apache.dubbo.config.annotation.Service;
 
@@ -14,5 +15,12 @@ public class UserServiceImpl implements UserService {
 
   public String sayHello() {
     return "hello dubbo from dubbo-service!";
+  }
+
+  @Override
+  public User findUserById(int id) {
+
+    User user = new User(1, "clearlove", "123456");
+    return user;
   }
 }

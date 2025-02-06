@@ -8,10 +8,10 @@
     <version>1.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>dubbo-interface</artifactId>
+  <artifactId>dubbo-pojo</artifactId>
   <packaging>jar</packaging>
 
-  <name>dubbo-interface</name>
+  <name>dubbo-pojo</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -21,10 +21,5 @@
   </properties>
 
   <dependencies>
-    <dependency>
-      <groupId>com.clearlove</groupId>
-      <artifactId>dubbo-pojo</artifactId>
-      <version>1.0-SNAPSHOT</version>
-    </dependency>
   </dependencies>
 </project>
