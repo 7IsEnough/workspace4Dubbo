@@ -8,9 +8,12 @@
 
 	<!--<context:component-scan base-package="com.clearlove.service" />-->
 
+	<!--<dubbo:protocol name="dubbo" port="20883" />-->
 	<!--dubbo的配置-->
 	<!--1.配置项目的名称，唯一-->
-	<dubbo:application name="dubbo-service" />
+	<dubbo:application name="dubbo-service" >
+		<!--<dubbo:parameter key="qos.port" value="55555"></dubbo:parameter>-->
+	</dubbo:application>
 	<!--2.配置注册中心的地址-->
 	<dubbo:registry address="zookeeper://192.168.47.100:2181" />
 	<!--3.配置dubbo包扫描-->

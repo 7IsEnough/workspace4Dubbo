@@ -21,7 +21,7 @@ public class UserController {
     2. 进行远程调用RPC
     3. 将结果封装为一个代理对象。给变量赋值
    */
-  @Reference // dubbo 远程注入
+  @Reference(version = "v1.0", loadbalance = "random", mock = "force:return null") // dubbo 远程注入 mock 内容表示不再调用userService的内容
   private UserService userService;
 
   @RequestMapping("/sayHello")
